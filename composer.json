@@ -1,0 +1,40 @@
+{
+  "name": "sergey-yabloncev/stream-telecom",
+  "description": "package for sending sms via stream telecom service",
+  "keywords": [
+    "stream-telecom",
+    "laravel",
+    "sms"
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "ext-json": "*",
+    "php": "^7.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "illuminate/support": "^5.8|^6.0"
+  },
+  "authors": [
+    {
+      "name": "Yabloncev Sergey",
+      "email": "sergey.yabloncev@yandex.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Yabloncev\\StreamTelecom\\": "src/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Yabloncev\\StreamTelecom\\ServiceProvider"
+      ],
+      "aliases": {
+        "Giftery": "Yabloncev\\StreamTelecom\\Facade"
+      }
+    }
+  }
+}
