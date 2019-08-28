@@ -45,6 +45,7 @@ class StreamTelecom
         ]);
 
         $this->sessionId = $this->getSessionId();
+
         $this->sourceAddress = config('stream_telecom.source');
     }
 

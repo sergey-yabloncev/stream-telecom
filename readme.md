@@ -15,4 +15,3 @@ Copy the package config to your local config with the publish command:
 ```shell
 php artisan vendor:publish --provider="Yabloncev\StreamTelecom\ServiceProvider"
 ```
-
