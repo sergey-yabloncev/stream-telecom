@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\Api\StreamTelecom;
+namespace Yabloncev\StreamTelecom;
 
 use GuzzleHttp\Client;
 
@@ -71,7 +71,7 @@ class StreamTelecom
      *
      * @return string
      */
-    protected function clearPhone(array $phones)
+    protected function clearPhone(array $phones): string
     {
         foreach ($phones as &$v) {
             $v = preg_replace('#[^\d]#', '', $v);
