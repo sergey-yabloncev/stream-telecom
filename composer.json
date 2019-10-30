@@ -26,14 +26,13 @@
       "Yabloncev\\StreamTelecom\\": "src/"
     }
   },
-
   "extra": {
     "laravel": {
       "providers": [
         "Yabloncev\\StreamTelecom\\ServiceProvider"
       ],
       "aliases": {
-        "Giftery": "Yabloncev\\StreamTelecom\\Facade"
+        "StreamTelecom": "Yabloncev\\StreamTelecom\\Facade"
       }
     }
   }
